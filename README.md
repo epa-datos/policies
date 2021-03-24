@@ -23,6 +23,7 @@ To start using a policy from the package you just have to import the package
 ```
 The package has the following constants:
 - **TestPolicy**: Implements a policy for testing purposes
+- **CoopPolicy**: Implements a policy for cooop roles
 
 Each constant is of type policy, which has two methods:   
 ### GetPolicyConfPath ###

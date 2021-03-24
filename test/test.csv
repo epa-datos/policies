@@ -1,0 +1,4 @@
+p, country, /test/countries/:country_id, GET
+p, country, /test/countries, GET
+p, retail, test/retailers/:retail_id, GET
+p, segment, test/countries/:country_id/retailers, GET
