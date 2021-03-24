@@ -1,0 +1,4 @@
+p, country, /api/v1/countries/:country_id/sectors, GET
+p, country, /api/v1/countries/:country_id/sectors/:sector_id, GET
+p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories
+p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories/:category_id
