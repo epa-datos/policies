@@ -1,4 +1,3 @@
-p, country, /api/v1/countries/:country_id/sectors, GET
-p, country, /api/v1/countries/:country_id/sectors/:sector_id, GET
-p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories
-p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories/:category_id
+p, admin, /api/v1/users/:user_id, DELETE
+p, admin, /api/v1/users, GET
+p, admin, /api/v1/users/invitations, POST
