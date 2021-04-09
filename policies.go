@@ -4,7 +4,7 @@ import (
 	"os"
 )
 
-var basePath = os.Getenv("GOPATH") + "/src/github.com/epa-datos/policies/"
+var basePath = os.Getenv("POLICY_PATH")
 
 type policy string
 
