@@ -1,12 +1,20 @@
-p, admin, /api/v1/users, GET
+p, admin, *, GET
 p, admin, /api/v1/users/:user_id, DELETE
 p, admin, /api/v1/users/invitations, POST
-p, admin, /api/v1/users/invitations, GET
 p, admin, /api/v1/invitations/:invitation_id, DELETE
 p, admin, /api/v1/invitations/:invitation_id/resend, POST
-p, admin, /api/v1/roles, GET
-p, admin, /api/v1/countries, GET
-p, hp, /api/v1/countries, GET
-p, country, /api/v1/countries, GET
-
-
+p, hp,/api/v1/countries, GET
+p, hp, /api/v1/countries/*, GET
+p, hp, /api/v1/retailers/*, GET
+p, hp, /api/v1/sectors, GET
+p, hp, /api/v1/categories, GET
+p, country,/api/v1/countries, GET
+p, country, /api/v1/countries/*, GET
+p, country, /api/v1/sectors, GET
+p, country, /api/v1/categories, GET
+p, country, /api/v1/retailers, GET
+p, country, /api/v1/retailers/*, GET
+p, retailer, /api/v1/retailers, GET
+p, retailer, /api/v1/retailers/*, GET
+p, retailer, /api/v1/sectors, GET
+p, retailer, /api/v1/categories, GET
