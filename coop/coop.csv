@@ -1,4 +1,20 @@
-p, country, /api/v1/countries/:country_id/sectors, GET
-p, country, /api/v1/countries/:country_id/sectors/:sector_id, GET
-p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories
-p, country, /api/v1/countries/:country_id/sectors/:sector_id/categories/:category_id
+p, admin, *, GET
+p, admin, /api/v1/users/:user_id, DELETE
+p, admin, /api/v1/users/invitations, POST
+p, admin, /api/v1/invitations/:invitation_id, DELETE
+p, admin, /api/v1/invitations/:invitation_id/resend, POST
+p, hp,/api/v1/countries, GET
+p, hp, /api/v1/countries/*, GET
+p, hp, /api/v1/retailers/*, GET
+p, hp, /api/v1/sectors, GET
+p, hp, /api/v1/categories, GET
+p, country,/api/v1/countries, GET
+p, country, /api/v1/countries/*, GET
+p, country, /api/v1/sectors, GET
+p, country, /api/v1/categories, GET
+p, country, /api/v1/retailers, GET
+p, country, /api/v1/retailers/*, GET
+p, retailer, /api/v1/retailers, GET
+p, retailer, /api/v1/retailers/*, GET
+p, retailer, /api/v1/sectors, GET
+p, retailer, /api/v1/categories, GET

@@ -4,8 +4,6 @@ import (
 	"os"
 )
 
-var basePath = os.Getenv("POLICY_PATH") + "policies/"
-
 type policy string
 
 type Policy interface {
