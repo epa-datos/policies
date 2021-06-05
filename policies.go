@@ -52,21 +52,25 @@ func (p policy) GetPolicyCsvPath() string {
 	p, admin, /api/v1/users/invitations, POST
 	p, admin, /api/v1/invitations/:invitation_id, DELETE
 	p, admin, /api/v1/invitations/:invitation_id/resend, POST
+	p, admin, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp,/api/v1/countries, GET
 	p, hp, /api/v1/countries/*, GET
 	p, hp, /api/v1/retailers/*, GET
 	p, hp, /api/v1/sectors, GET
 	p, hp, /api/v1/categories, GET
+	p, hp, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, country,/api/v1/countries, GET
 	p, country, /api/v1/countries/*, GET
 	p, country, /api/v1/sectors, GET
 	p, country, /api/v1/categories, GET
 	p, country, /api/v1/retailers, GET
 	p, country, /api/v1/retailers/*, GET
+	p, country, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, retailer, /api/v1/retailers, GET
 	p, retailer, /api/v1/retailers/*, GET
 	p, retailer, /api/v1/sectors, GET
 	p, retailer, /api/v1/categories, GET
+	p, retailer, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	`
 	_, err = file.Write([]byte(d2))
 	if err != nil {
