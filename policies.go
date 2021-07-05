@@ -47,7 +47,8 @@ func (p policy) GetPolicyCsvPath() string {
 		return ""
 	}
 	d2 := `
-		p, admin, *, GET
+	p, admin, *, GET
+	p, admin,/api/v1/users/:user_id/images,PUT
 	p, admin, /api/v1/users/:user_id, DELETE
 	p, admin, /api/v1/users/invitations, POST
 	p, admin, /api/v1/invitations/:invitation_id, DELETE
@@ -55,10 +56,14 @@ func (p policy) GetPolicyCsvPath() string {
 	p, admin, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp,/api/v1/countries, GET
 	p, hp, /api/v1/countries/*, GET
+	p, hp,/api/v1/latam/*, GET
+	p, hp, /api/v1/retailers, GET
 	p, hp, /api/v1/retailers/*, GET
 	p, hp, /api/v1/sectors, GET
 	p, hp, /api/v1/categories, GET
 	p, hp, /api/v1/retailers/:retailer_id/google-my-business/*, POST
+	p, hp,/api/v1/users/:user_id/images,PUT
+	p, country,/api/v1/latam/*, GET
 	p, country,/api/v1/countries, GET
 	p, country, /api/v1/countries/*, GET
 	p, country, /api/v1/sectors, GET
@@ -66,11 +71,13 @@ func (p policy) GetPolicyCsvPath() string {
 	p, country, /api/v1/retailers, GET
 	p, country, /api/v1/retailers/*, GET
 	p, country, /api/v1/retailers/:retailer_id/google-my-business/*, POST
+	p, country,/api/v1/users/:user_id/images,PUT
 	p, retailer, /api/v1/retailers, GET
 	p, retailer, /api/v1/retailers/*, GET
 	p, retailer, /api/v1/sectors, GET
 	p, retailer, /api/v1/categories, GET
 	p, retailer, /api/v1/retailers/:retailer_id/google-my-business/*, POST
+	p, retailer,/api/v1/users/:user_id/images,PUT
 	`
 	_, err = file.Write([]byte(d2))
 	if err != nil {
