@@ -54,6 +54,9 @@ func (p policy) GetPolicyCsvPath() string {
 	p, admin, /api/v1/invitations/:invitation_id, DELETE
 	p, admin, /api/v1/invitations/:invitation_id/resend, POST
 	p, admin, /api/v1/retailers/:retailer_id/google-my-business/*, POST
+	p, hp, /api/v1/omnichat/*, GET
+	p, hp, /api/v1/pc-selector/*, GET
+	p, hp, /api/v1/indexed/*, GET
 	p, hp,/api/v1/countries, GET
 	p, hp, /api/v1/countries/*, GET
 	p, hp,/api/v1/latam/*, GET
@@ -63,6 +66,9 @@ func (p policy) GetPolicyCsvPath() string {
 	p, hp, /api/v1/categories, GET
 	p, hp, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp,/api/v1/users/:user_id/images,PUT
+	p, country, /api/v1/omnichat/*,GET
+	p, country, /api/v1/pc-selector/*,GET
+	p, country, /api/v1/indexed/*,GET
 	p, country,/api/v1/latam/*, GET
 	p, country,/api/v1/countries, GET
 	p, country, /api/v1/countries/*, GET
@@ -72,6 +78,9 @@ func (p policy) GetPolicyCsvPath() string {
 	p, country, /api/v1/retailers/*, GET
 	p, country, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, country,/api/v1/users/:user_id/images,PUT
+	p, retailer, /api/v1/omnichat/retailers/*, GET
+	p, retailer, /api/v1/pc-selector/retailers/*, GET
+	p, retailer, /api/v1/indexed/retailers/*, GET
 	p, retailer, /api/v1/retailers, GET
 	p, retailer, /api/v1/retailers/*, GET
 	p, retailer, /api/v1/sectors, GET
