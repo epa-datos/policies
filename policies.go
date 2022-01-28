@@ -56,6 +56,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, admin, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp, /api/v1/omnichat/*, GET
 	p, hp, /api/v1/pc-selector/*, GET
+	p, hp, /api/v1/sentiment/*, GET
 	p, hp, /api/v1/indexed/*, GET
 	p, hp,/api/v1/countries, GET
 	p, hp, /api/v1/countries/*, GET
