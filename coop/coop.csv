@@ -1,6 +1,7 @@
 p, admin, *, GET
 p, admin, /api/v1/users/:user_id, DELETE
 p, admin, /api/v1/users/invitations, POST
+p, admin, /api/v1/users/:user_id/permissions/update, PUT
 p, admin, /api/v1/invitations/:invitation_id, DELETE
 p, admin, /api/v1/invitations/:invitation_id/resend, POST
 p, hp, /api/v1/sentiment/*, GET
