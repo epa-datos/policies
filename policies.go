@@ -51,6 +51,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, admin,/api/v1/users/:user_id/images,PUT
 	p, admin, /api/v1/users/:user_id, DELETE
 	p, admin, /api/v1/users/invitations, POST
+	p, admin, /api/v1/users/:user_id/permissions/update, PUT
 	p, admin, /api/v1/invitations/:invitation_id, DELETE
 	p, admin, /api/v1/invitations/:invitation_id/resend, POST
 	p, admin, /api/v1/retailers/:retailer_id/google-my-business/*, POST
