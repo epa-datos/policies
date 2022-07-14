@@ -66,6 +66,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, hp, /api/v1/retailers/*, GET
 	p, hp, /api/v1/sectors, GET
 	p, hp, /api/v1/categories, GET
+	p, hp, /api/v1/multichannel/*, GET
 	p, hp, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp,/api/v1/users/:user_id/images,PUT
 	p, country, /api/v1/omnichat/*,GET
@@ -78,6 +79,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, country, /api/v1/categories, GET
 	p, country, /api/v1/retailers, GET
 	p, country, /api/v1/retailers/*, GET
+	p, country, /api/v1/multichannel/*, GET
 	p, country, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, country,/api/v1/users/:user_id/images,PUT
 	p, retailer, /api/v1/omnichat/retailers/*, GET
@@ -87,6 +89,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, retailer, /api/v1/retailers/*, GET
 	p, retailer, /api/v1/sectors, GET
 	p, retailer, /api/v1/categories, GET
+	p, retailer, /api/v1/multichannel/retailers/*, GET
 	p, retailer, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, retailer,/api/v1/users/:user_id/images,PUT
 	`
