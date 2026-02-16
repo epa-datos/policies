@@ -11,6 +11,7 @@ p, hp, /api/v1/retailers/*, GET
 p, hp, /api/v1/sectors, GET
 p, hp, /api/v1/categories, GET
 p, hp, /api/v1/multichannel/*, GET
+p, hp, /api/v1/activeCountries, GET
 p, country,/api/v1/countries, GET
 p, country, /api/v1/countries/*, GET
 p, country, /api/v1/sectors, GET
@@ -18,8 +19,10 @@ p, country, /api/v1/categories, GET
 p, country, /api/v1/retailers, GET
 p, country, /api/v1/retailers/*, GET
 p, country, /api/v1/multichannel/*, GET
+p, country, /api/v1/activeCountries, GET
 p, retailer, /api/v1/retailers, GET
 p, retailer, /api/v1/retailers/*, GET
 p, retailer, /api/v1/sectors, GET
 p, retailer, /api/v1/categories, GET
 p, retailer, /api/v1/multichannel/retailers/*, GET
+p, retailer, /api/v1/activeCountries, GET
