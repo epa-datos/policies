@@ -70,6 +70,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, hp, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, hp,/api/v1/users/:user_id/images,PUT
 	p, hp, /api/v1/activeCountries, GET
+	p, hp, /api/v1/active*, GET
 	p, country, /api/v1/omnichat/*,GET
 	p, country, /api/v1/pc-selector/*,GET
 	p, country, /api/v1/indexed/*,GET
@@ -84,6 +85,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, country, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, country,/api/v1/users/:user_id/images,PUT
 	p, country, /api/v1/activeCountries, GET
+	p, country, /api/v1/active*, GET
 	p, retailer, /api/v1/omnichat/retailers/*, GET
 	p, retailer, /api/v1/pc-selector/retailers/*, GET
 	p, retailer, /api/v1/indexed/retailers/*, GET
@@ -95,6 +97,7 @@ func (p policy) GetPolicyCsvPath() string {
 	p, retailer, /api/v1/retailers/:retailer_id/google-my-business/*, POST
 	p, retailer,/api/v1/users/:user_id/images,PUT
 	p, retailer, /api/v1/activeCountries, GET
+	p, retailer, /api/v1/active*, GET
 	`
 	_, err = file.Write([]byte(d2))
 	if err != nil {
